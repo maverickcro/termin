@@ -10,7 +10,10 @@ body {
   display: flex;
   flex-direction: column;
   background: linear-gradient(to right, #884398, #e66465, #f8a44b);
+  background-size: cover;
   margin: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .logo {
@@ -32,10 +35,12 @@ nav {
   background-color: rgba(33, 38, 58, 0.4);
   transition: all 0.3s ease-in-out;
   opacity: 0;
+  visibility: hidden;
 }
 
 nav.active {
   opacity: 1;
+  visibility: visible;
 }
 
 nav .container {
@@ -96,7 +101,7 @@ nav ul li.current {
   align-items: center;
   cursor: pointer;
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   color: white;
   opacity: 0.8;
 }
@@ -104,8 +109,10 @@ nav ul li.current {
 .about-us {
   background-color: #21263a;
   height: 100vh;
+  width: 100%;
   padding: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
@@ -115,9 +122,11 @@ nav ul li.current {
   align-items: center;
   cursor: pointer;
   position: absolute;
-  bottom: -625px;
+  bottom: 0px;
+  left: 0px;
   color: white;
   opacity: 0.8;
+  position: relative;
 }
 
 .container-1 {
@@ -176,4 +185,23 @@ nav ul li.current {
 }
 .icon {
   font-size: 100px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sport-icons {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 30px 0;
+  }
+  .sport-icon {
+    margin: 20px 0;
+  }
+  .container-1 {
+    flex-direction: column;
+  }
 }
