@@ -47,3 +47,4 @@ document.getElementById('sports-1').addEventListener('click', () => {
     scrollTo(document.getElementById('3'))
 })
 
+/*PARTICLES */
