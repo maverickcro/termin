@@ -1,4 +1,5 @@
 const nav = document.querySelector('.nav')
+const items = document.querySelectorAll('.item')
 
 window.addEventListener('scroll', () => {
     if(window.scrollY > nav.offsetHeight) {
@@ -7,6 +8,17 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('active')
     }
 })
+
+
+
+const handleClick = (e) => {
+    const current = document.querySelector('.current');
+    if(current){
+      current.classList.remove('current');
+    }
+    e.currentTarget.classList.add('current');
+  }
+
 
 scrollTo = (element) => {
     window.scroll({
@@ -28,6 +40,10 @@ document.getElementById('readmore').addEventListener('click', () => {
 document.getElementById('about-us').addEventListener('click', () => {
       scrollTo(document.getElementById('2'))
   })
-  document.getElementById('contact').addEventListener('click', () => {
+  document.getElementById('sports').addEventListener('click', () => {
     scrollTo(document.getElementById('3'))
 })
+document.getElementById('sports-1').addEventListener('click', () => {
+    scrollTo(document.getElementById('3'))
+})
+

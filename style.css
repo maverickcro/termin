@@ -57,7 +57,7 @@ nav ul li {
   margin: 0 10px;
   transition: all 0.3s ease-in-out;
   color: #f1f1f1;
-  opacity: 0.6;
+  opacity: 0.9;
   cursor: pointer;
 }
 
@@ -138,7 +138,7 @@ nav ul li.current {
   font-size: 230px;
 }
 
-.contact {
+.sports {
   height: 100vh;
   margin: 10px 0;
   display: flex;
@@ -146,4 +146,34 @@ nav ul li.current {
   align-items: center;
   justify-content: center;
   background-color: #21263a;
+  color: white;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1000px;
+  padding: 50px;
+  margin: 30px;
+}
+
+.sport-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  margin: 50px 0;
+}
+.sport-icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 50px;
+}
+.icon {
+  font-size: 100px;
 }
